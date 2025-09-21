@@ -1,0 +1,122 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bahnschrift', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+/* Шапка страницы */
+.hero {
+    text-align: center;
+    padding-top: 5rem;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #6a11cb, #ffebee);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: .5rem;
+}
+
+/* Основная секция */
+#about h2,
+#skills h2,
+#stack h2,
+#education h2,
+#experience h2,
+#whe-me h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about p,
+#skills ul li,
+#stack p,
+#education p,
+#experience div.job p,
+#whe-me ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+#skills ul,
+#whe-me ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+#stack p a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#stack p a:hover {
+    color: #2980b9;
+}
+
+/* Кнопка "Почему я?" */
+#whe-me button {
+    background-color: #B085D8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#whe-me button:hover {
+    background-color: #6a11cb;
+}
+/* Футер */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
